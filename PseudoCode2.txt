@@ -1,0 +1,15 @@
+Scenario: You work for a grocery store, and you have been tasked with 
+creating an algorithm to calculate the total cost of a customer’s purchase,
+including taxes and discounts. The store offers a discount of 10% on purchases
+over $50 and charges a sales tax rate of 8%.​
+
+1. Start
+2. Take input purchase
+3. Declare discount to 0.1 and tax to 0.08
+4. If purchase greater than 50 then go to step 5 else go to step 7
+5. Declare discounted to purchase multiplied by discount
+6. Subtract discounted from purchase
+7. Declare taxedPrice to purchase multiplied by tax
+8. Add taxedPrice to purchase
+9. Print purchase
+10. End

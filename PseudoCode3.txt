@@ -1,0 +1,17 @@
+Hackerrank -- https://www.hackerrank.com/challenges/closest-numbers/problem?h_r=internal-search
+
+1. Start
+2. Take input array arr
+3. Declare n to size of array arr
+4. Sort the array arr in ascending order
+5. Declare variable minDiff to 10000000007
+6. Declare an empty array answer, i to 1
+7. If i less than n goto 8 else goto 10
+8. If minDiff less than arr[i] - arr[i-1] set minDiff to arr[i] - arr[i-1]
+9. Increase i by 1 goto step 7
+10. Set i to 1
+11. if i less than n goto 12 else goto 14
+12. if arr[i] - arr[i-1] equals minDiff, add arr[i-1] and arr[i] to ans array.
+13. increase i by 1 goto step 11
+14. Print ans array
+15. End

@@ -1,0 +1,11 @@
+Hackerrank --> https://www.hackerrank.com/challenges/icecream-parlor/problem
+
+1. Start
+2. take input m, array arr
+3. Declare i=0 and j=i+1 and n=number of elements in arr and an empty array ans
+4. if i less than n set j to i+1 and goto step 5 else goto 8
+5. if j less than n goto step 6 else set i=i+1 and goto step 4
+6. if arr[i] + arr[j] equals goto 7 else set j=j+1 and goto step 5
+7. add i+1, j+1 to ans array goto 8
+8. Print ans
+9. End

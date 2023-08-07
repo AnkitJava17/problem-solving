@@ -1,0 +1,61 @@
+majority number in an array
+
+[1,2,3,1,2,3,2,3,2]
+
+Algorithm -->
+
+1. Start
+2. Take input array arr
+3. Sort the arr
+4. declare curr=0,maxi=0,ans=0,var=arr[0],i=0,n=size of array
+5. if i less than n goto step 6 else goto step goto 11
+6. if var equals arr[i], increament curr and goto step 9 else goto 7
+7. if curr greater than maxi set maxi = curr and ans = var and goto 8 else set curr = 1 and goto 8
+8. set var = arr[i]
+9. if curr greater than maxi set ans = var
+10. increament i and goto step 5
+11. print ans
+12. End
+
+
+--> missing positive element
+
+Algorithm 2 
+
+1. Start
+2. Sort the array
+3. Set counter = 1, i=0
+4. Iterate through the array and start searching for first positive missing element If arr[i]>0
+5. If counter not equal to arr[i] and i< length go to 6
+5. increment counter and i
+6. Print arr[i]
+7. Stop
+
+Display common elements from 2 arrays
+
+Algorithm-->
+
+1. START
+2. Initialize i=0,j=0
+3. Sort both the arrays
+4. Find the minimum length from both the arrays
+5. Do the following steps till i<min_length , j<min_length.
+if arr1 first element is smallest than the arr2 first element than increment the pointer of the smallest one .
+6. Once match is found print that element.
+7. When all elements of min_length array are checked than break the loop.
+8. STOP
+
+
+Binary Search
+
+Algorithm . ->
+
+1. START
+2. Target . Number to be searched
+3. Sort the given array
+4. Find the middle element of the array
+5. if target > middle than search in right
+        And if target < middle than search in left
+6. if middle element == target goto step 7 else goto 5
+7. Print target
+8. STOP

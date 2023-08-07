@@ -1,0 +1,75 @@
+Sorting Algorithms
+
+[2,3,1,4,5,6]
+
+
+Bubble Sort
+
+1. START
+2. Take input array arr
+3. Declare i=0, j=0, n = size of array arr
+4. if i less than n, set j=0 goto step 5 else goto step 9
+5. if j less than n-1 goto step 6 else goto step 8
+6. if arr[j] > arr[j+1], swap the positions of arr[j] and arr[j+1]
+7. increment j by 1 goto step 5
+8. increment i by 1 goto step 4
+9. print array arr
+10. END
+
+Insertion Sort
+
+1. START
+2. take input array arr
+3. Declare i=0, n=size of arr
+4. if i less than n-1 goto step 5 else goto 
+5. if arr[i] < arr[i+1], increment i by 1 and goto step 4 else goto step 6
+6. declare j = i+1
+7. if j > -1 goto step 8 else goto step 5
+8. if arr[j] < arr[j-1], swap (arr[j], arr[j-1]) and decrement j by 1 and goto 7 else increment i goto 4
+9. print array
+10. END
+
+
+Selection Sort
+
+1. START
+2. Take input array from the user
+3. start the loop for i in range from 0 to length of the array
+4.	Start the nested loop for j in range from i+1 to length of the array
+5.		find the minimum element in the range of the inner loop
+6.	swap the minimum element in step 5 to the array[i]
+7. print "Sorted Array" array
+8. END
+
+
+Merge the sorted arrays
+
+1. START
+2. Take input two arrays arr1, arr2
+3. Initialize i=0,j=0
+4. Declare a new array 
+5. If i<arr1_length, j<arr2_length goto 6 else goto 7
+6. if arr1 first element is smallest than the arr2 first element than store the element in result array, 
+	increment i goto step 5,
+	else if arr1 element equals arr2 element add both and increment both i and j and goto step 5,
+	else add arr[j] to new array and increment j and goto step 5.
+7. If i < arr1_length goto step 8 else goto step 9
+8. add arr1[i] to new array, increment i and goto step 7
+9. If j < arr2_length goto step 10 else goto step 11
+10. add arr2[j] to new array, increment j and goto step 9
+11. print new array
+12. STOP
+
+
+
+Merge Sort
+
+1. START
+2. Deaclare array and variables-left,right,mid.
+3. Perform merge function
+4. If left is less than right then return mid=(left+right)/2
+5. mergesort(array,left,mid)
+           mergesort(array,mid+1,right)
+           merge (array,left,mid,right)
+6. Print the sorted array.
+7. STOP

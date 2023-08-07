@@ -1,0 +1,14 @@
+Write an algo for checking a num to be perfect.
+
+1. Start
+2. take input num
+3. if num less than equal to zero print false and go to 10
+4. declare sum = 1
+5. declare i=2
+6. if i is smaller than (nearest whole number of half of n) + 1 
+	goto 7 else goto 8
+7. if num is divisible by i add it to sum and increament i to i + 1
+8. go to step 6
+9. if sum less than num	print false and go to 11
+10. if sum equals num print True and go to 11
+11. end
